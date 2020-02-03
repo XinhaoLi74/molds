@@ -1,4 +1,11 @@
-# nbdev template
+# MolDS
+> A collection of **Mol**ecular **D**ata**S**ets (**MolDS**) for benchmarking machine learning methods
 
-Use this template to more easily create your nbdev project.
 
+## Install
+
+`pip install molds`
+
+## How to use
+
+This is a `helllo world` test for the `nbdev` package.
