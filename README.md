@@ -4,7 +4,10 @@
 
 ## Install
 
-`pip install molds`
+Prerequirments:
+```
+conda install -c conda-forge rdkit
+```
 
 ## How to use
 

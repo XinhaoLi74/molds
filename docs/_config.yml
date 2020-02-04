@@ -1,7 +1,7 @@
-repository: xinhaoli/molds
+repository: XinhaoLi74/molds
 output: web
-topnav_title: molds
-site_title: molds
+topnav_title: MolDS
+site_title: MolDS
 company_name: Xinhao Li
 description: A collection of molecule datasets for benchmarking machine learning methods.
 # Set to false to disable KaTeX math
