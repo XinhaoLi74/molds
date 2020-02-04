@@ -1,5 +1,5 @@
 # MolDS
-> A collection of **Mol**ecular **D**ata**S**ets (**MolDS**) for benchmarking machine learning methods
+> A collection of curated and standardized Molecular DataSets (MolDS) for benchmarking machine learning methods. For all datasets, we provide standardized dataset splitting.
 
 
 ## Install
