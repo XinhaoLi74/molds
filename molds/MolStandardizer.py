@@ -3,6 +3,9 @@
 __all__ = ['remove_mixture', 'MolStandardizer']
 
 # Cell
+
+from rdkit import RDLogger
+RDLogger.DisableLog('rdApp.info')
 from rdkit import Chem
 from molvs import Standardizer
 
@@ -21,7 +24,11 @@ def remove_mixture(mol):
 
 def MolStandardizer(smiles):
     '''
-    The main function for molecular standardization
+    The main function for molecular standardization:
+    - Sanitizing with RDKit: santize mol; remove Hs; disconnect metals; normalize mol; reionize mol; recalculate stereochemistry.
+    - Replace all atoms with the most abundant isotope for that element.
+    - Remove counterions in the salts and neutralize the molecules.
+    - Remove the mixture.
     '''
     try:
         mol = Chem.MolFromSmiles(smiles)

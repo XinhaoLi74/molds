@@ -5,7 +5,7 @@ title: MolStandardizer
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "`MolStandardizer` standardizes molecules with the following steps:"
+summary: "Molecular standardization."
 ---
 <!--
 
@@ -27,7 +27,7 @@ summary: "`MolStandardizer` standardizes molecules with the following steps:"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>RDKit WARNING: [13:35:51] Enabling RDKit 2019.09.3 jupyter extensions
+<pre>RDKit WARNING: [13:58:59] Enabling RDKit 2019.09.3 jupyter extensions
 </pre>
 </div>
 </div>
@@ -37,6 +37,20 @@ summary: "`MolStandardizer` standardizes molecules with the following steps:"
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>RDKit WARNING: [13:52:24] Enabling RDKit 2019.09.3 jupyter extensions
+</pre>
+</div>
+</div>
+
+</div>
+</div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
@@ -48,7 +62,7 @@ summary: "`MolStandardizer` standardizes molecules with the following steps:"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="remove_mixture" class="doc_header"><code>remove_mixture</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L9" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>remove_mixture</code>(<strong><code>mol</code></strong>)</p>
+<h4 id="remove_mixture" class="doc_header"><code>remove_mixture</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>remove_mixture</code>(<strong><code>mol</code></strong>)</p>
 </blockquote>
 <p>Function to remove mixture</p>
 
@@ -69,9 +83,15 @@ summary: "`MolStandardizer` standardizes molecules with the following steps:"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="MolStandardizer" class="doc_header"><code>MolStandardizer</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>MolStandardizer</code>(<strong><code>smiles</code></strong>)</p>
+<h4 id="MolStandardizer" class="doc_header"><code>MolStandardizer</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>MolStandardizer</code>(<strong><code>smiles</code></strong>)</p>
 </blockquote>
-<p>The main function for molecular standardization</p>
+<p>The main function for molecular standardization:</p>
+<ul>
+<li>Sanitizing with RDKit: santize mol; remove Hs; disconnect metals; normalize mol; reionize mol; recalculate stereochemistry.</li>
+<li>Replace all atoms with the most abundant isotope for that element.</li>
+<li>Remove counterions in the salts and neutralize the molecules.</li>
+<li>Remove the mixture.</li>
+</ul>
 
 </div>
 
@@ -83,7 +103,7 @@ summary: "`MolStandardizer` standardizes molecules with the following steps:"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Examples">Examples<a class="anchor-link" href="#Examples">&#182;</a></h2>
+<h2 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -158,8 +178,8 @@ summary: "`MolStandardizer` standardizes molecules with the following steps:"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>RDKit ERROR: [13:29:59] SMILES Parse Error: syntax error while parsing: NaN
-RDKit ERROR: [13:29:59] SMILES Parse Error: Failed parsing SMILES &#39;NaN&#39; for input: &#39;NaN&#39;
+<pre>RDKit ERROR: [13:52:25] SMILES Parse Error: syntax error while parsing: NaN
+RDKit ERROR: [13:52:25] SMILES Parse Error: Failed parsing SMILES &#39;NaN&#39; for input: &#39;NaN&#39;
 </pre>
 </div>
 </div>
