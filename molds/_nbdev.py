@@ -2,9 +2,10 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"say_hello": "00_hellonbdev.ipynb"}
+index = {"remove_mixture": "00_cleaner.ipynb",
+         "MolStandardizer": "00_cleaner.ipynb"}
 
-modules = ["hellonbdev.py"]
+modules = ["cleaner.py"]
 
 doc_url = "https://XinhaoLi74.github.io/molds/"
 
