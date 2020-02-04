@@ -10,8 +10,8 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Cleaner
-      url: /cleaner
+      title: MolStandardizer
+      url: /MolStandardizer
     output: web
     title: molds
   output: web
