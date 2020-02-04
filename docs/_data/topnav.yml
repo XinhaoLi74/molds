@@ -2,7 +2,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/xinhaoli/molds
+      external_url: https://github.com/XinhaoLi74/molds
 
 #Topnav dropdowns
 topnav_dropdowns:
