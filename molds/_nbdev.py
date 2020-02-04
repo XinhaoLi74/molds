@@ -3,7 +3,8 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"remove_mixture": "00_MolStandardizer.ipynb",
-         "MolStandardizer": "00_MolStandardizer.ipynb"}
+         "MolStandardizer": "00_MolStandardizer.ipynb",
+         "DSclearner": "00_MolStandardizer.ipynb"}
 
 modules = ["MolStandardizer.py"]
 

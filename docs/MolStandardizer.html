@@ -27,7 +27,7 @@ summary: "Molecular standardization."
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>RDKit WARNING: [13:58:59] Enabling RDKit 2019.09.3 jupyter extensions
+<pre>RDKit WARNING: [15:47:09] Enabling RDKit 2019.09.3 jupyter extensions
 </pre>
 </div>
 </div>
@@ -37,20 +37,6 @@ summary: "Molecular standardization."
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>RDKit WARNING: [13:52:24] Enabling RDKit 2019.09.3 jupyter extensions
-</pre>
-</div>
-</div>
-
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
@@ -62,7 +48,7 @@ summary: "Molecular standardization."
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="remove_mixture" class="doc_header"><code>remove_mixture</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>remove_mixture</code>(<strong><code>mol</code></strong>)</p>
+<h4 id="remove_mixture" class="doc_header"><code>remove_mixture</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L11" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>remove_mixture</code>(<strong><code>mol</code></strong>)</p>
 </blockquote>
 <p>Function to remove mixture</p>
 
@@ -83,7 +69,7 @@ summary: "Molecular standardization."
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="MolStandardizer" class="doc_header"><code>MolStandardizer</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>MolStandardizer</code>(<strong><code>smiles</code></strong>)</p>
+<h4 id="MolStandardizer" class="doc_header"><code>MolStandardizer</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L24" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>MolStandardizer</code>(<strong><code>smiles</code></strong>)</p>
 </blockquote>
 <p>The main function for molecular standardization:</p>
 <ul>
@@ -101,9 +87,31 @@ summary: "Molecular standardization."
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="DSclearner" class="doc_header"><code>DSclearner</code><a href="https://github.com/XinhaoLi74/molds/tree/master/molds/MolStandardizer.py#L49" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>DSclearner</code>(<strong><code>df</code></strong>)</p>
+</blockquote>
+<p>Standardize SMILES and remove the duplicates in a dataset.</p>
+<p><strong>The column contrains SMILES must be named as 'smiles'</strong></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h2>
+<h2 id="Example-1:-MolStandardizer">Example 1: MolStandardizer<a class="anchor-link" href="#Example-1:-MolStandardizer">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -178,8 +186,8 @@ summary: "Molecular standardization."
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>RDKit ERROR: [13:52:25] SMILES Parse Error: syntax error while parsing: NaN
-RDKit ERROR: [13:52:25] SMILES Parse Error: Failed parsing SMILES &#39;NaN&#39; for input: &#39;NaN&#39;
+<pre>RDKit ERROR: [14:59:56] SMILES Parse Error: syntax error while parsing: NaN
+RDKit ERROR: [14:59:56] SMILES Parse Error: Failed parsing SMILES &#39;NaN&#39; for input: &#39;NaN&#39;
 </pre>
 </div>
 </div>
@@ -535,6 +543,227 @@ RDKit ERROR: [13:52:25] SMILES Parse Error: Failed parsing SMILES &#39;NaN&#39; 
       <td>Oc1ccccn1</td>
       <td><img data-content="rdkit/molecule" src="data:image/png;base64,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" alt="Mol"/></td>
       <td><img data-content="rdkit/molecule" src="data:image/png;base64,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" alt="Mol"/></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-2:-DSclearner">Example 2: DSclearner<a class="anchor-link" href="#Example-2:-DSclearner">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_smiles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;[Na]OC(=O)c1ccc(C[S+2]([O-])([O-]))cc1.C(Cl)(Cl)Cl&#39;</span><span class="p">,</span> <span class="c1"># contrains counterions and solvent </span>
+              <span class="s1">&#39;O=[13C]([O-])c1ccccc1&#39;</span><span class="p">,</span> <span class="c1"># Contains isotope and solvent</span>
+              <span class="s1">&#39;O.[Na]O[13C](=O)c1ccc(C[S+2]([O-])([O-]))cc1.C(=O)C[C@H](C)[C@H](N)C(O)=O&#39;</span><span class="p">,</span> <span class="c1"># mixture</span>
+              <span class="s1">&#39;C(=O)CC[C@@H](N)C(O)=O&#39;</span><span class="p">,</span> <span class="c1"># stereochemistry 1</span>
+              <span class="s1">&#39;C(=O)CC[C@H](N)C(O)=O&#39;</span><span class="p">,</span><span class="c1"># stereochemistry 2</span>
+              <span class="s1">&#39;O=C1NC=CC=C1&#39;</span><span class="p">,</span> <span class="c1"># Tautomer 1</span>
+              <span class="s1">&#39;Oc1ccccn1&#39;</span><span class="p">,</span> <span class="c1"># Tautomer 2</span>
+              <span class="s1">&#39;Oc1ccccn1&#39;</span> <span class="c1"># duplicates</span>
+              <span class="p">]</span> 
+
+<span class="n">df_smiles</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;smiles&#39;</span><span class="p">:</span> <span class="n">sample_smiles</span><span class="p">})</span>
+<span class="n">df_smiles</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(8, 1)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dataset before Standardization:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_smiles</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>smiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[Na]OC(=O)c1ccc(C[S+2]([O-])([O-]))cc1.C(Cl)(C...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>O=[13C]([O-])c1ccccc1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>O.[Na]O[13C](=O)c1ccc(C[S+2]([O-])([O-]))cc1.C...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>C(=O)CC[C@@H](N)C(O)=O</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>C(=O)CC[C@H](N)C(O)=O</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>O=C1NC=CC=C1</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Oc1ccccn1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Oc1ccccn1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dataset after Standardization</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_clean</span> <span class="o">=</span> <span class="n">DSclearner</span><span class="p">(</span><span class="n">df_smiles</span><span class="p">)</span>
+<span class="n">df_clean</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>smiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>O=C(O)c1ccc(C[S](=O)=O)cc1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>O=C(O)c1ccccc1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>N[C@H](CCC=O)C(=O)O</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>N[C@@H](CCC=O)C(=O)O</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>O=c1cccc[nH]1</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Oc1ccccn1</td>
     </tr>
   </tbody>
 </table>
