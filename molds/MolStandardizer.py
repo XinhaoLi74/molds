@@ -5,8 +5,8 @@ __all__ = ['remove_mixture', 'MolStandardizer', 'DSclearner']
 # Cell
 
 import pandas as pd
-# from rdkit import Chem
-# from molvs import Standardizer
+from rdkit import Chem
+from molvs import Standardizer
 
 def remove_mixture(mol):
     '''

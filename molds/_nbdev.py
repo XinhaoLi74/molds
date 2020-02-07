@@ -8,7 +8,8 @@ index = {"remove_mixture": "00_MolStandardizer.ipynb",
          "generate_scaffold": "01_DSsplitter.ipynb",
          "scaffold_to_smiles": "01_DSsplitter.ipynb",
          "scaffold_split": "01_DSsplitter.ipynb",
-         "random_split": "01_DSsplitter.ipynb"}
+         "random_split": "01_DSsplitter.ipynb",
+         "generate_folds": "01_DSsplitter.ipynb"}
 
 modules = ["MolStandardizer.py",
            "DSsplitter.py"]
