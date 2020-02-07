@@ -1,6 +1,7 @@
 {
   "molds": {
     "Overview": "/",
-    "MolStandardizer": "/MolStandardizer"
+    "MolStandardizer": "/MolStandardizer",
+    "DSsplitter": "/DSsplitter"
   }
 }
