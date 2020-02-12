@@ -2,6 +2,7 @@
   "molds": {
     "Overview": "/",
     "MolStandardizer": "/MolStandardizer",
-    "DSsplitter": "/DSsplitter"
+    "DSsplitter": "/DSsplitter",
+    "Diagnoser": "/metrics"
   }
 }

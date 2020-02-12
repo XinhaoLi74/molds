@@ -9,10 +9,30 @@ index = {"remove_mixture": "00_MolStandardizer.ipynb",
          "scaffold_to_smiles": "01_DSsplitter.ipynb",
          "scaffold_split": "01_DSsplitter.ipynb",
          "random_split": "01_DSsplitter.ipynb",
-         "generate_folds": "01_DSsplitter.ipynb"}
+         "generate_folds": "01_DSsplitter.ipynb",
+         "mapper": "02_metrics.ipynb",
+         "cos_similarity": "02_metrics.ipynb",
+         "fingerprints_generator": "02_metrics.ipynb",
+         "collect_fingerprints": "02_metrics.ipynb",
+         "average_agg_tanimoto": "02_metrics.ipynb",
+         "fragments_generator": "02_metrics.ipynb",
+         "collect_fragments": "02_metrics.ipynb",
+         "merge": "02_metrics.ipynb",
+         "funcgps_generator": "02_metrics.ipynb",
+         "PATT_HETERO": "02_metrics.ipynb",
+         "PATT_DOUBLE_TRIPLE": "02_metrics.ipynb",
+         "PATT_CC_DOUBLE_TRIPLE": "02_metrics.ipynb",
+         "PATT_ACETAL": "02_metrics.ipynb",
+         "PATT_OXIRANE_ETC": "02_metrics.ipynb",
+         "PATT_TUPLE": "02_metrics.ipynb",
+         "collect_funcgps": "02_metrics.ipynb",
+         "collect_scaffolds": "02_metrics.ipynb",
+         "SNN": "02_metrics.ipynb",
+         "internal_diversity": "02_metrics.ipynb"}
 
 modules = ["MolStandardizer.py",
-           "DSsplitter.py"]
+           "DSsplitter.py",
+           "diagnoser.py"]
 
 doc_url = "https://XinhaoLi74.github.io/molds/"
 

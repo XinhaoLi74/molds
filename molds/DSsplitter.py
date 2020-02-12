@@ -110,7 +110,7 @@ def scaffold_split(data,
 
     return (train, val, test), (train_index, val_index, test_index)
 
-def random_split(data,
+def random_split(smi_list,
                 sizes: Tuple[float, float, float] = (0.8, 0.1, 0.1),
                 seed: int = 0,
                 shuffle: bool = True):
@@ -126,7 +126,7 @@ def random_split(data,
     """
     assert sum(sizes) == 1
 
-    data_index = [i for i in range(len(lipo_data.smiles))]
+    data_index = [i for i in range(len(smi_list))]
     if shuffle:
         random.seed(seed)
         random.shuffle(data_index)
@@ -140,9 +140,9 @@ def random_split(data,
     test_index = data_index[val_cutoff:]
 
     # Map from indices to data
-    train = [data[i] for i in train_index]
-    val = [data[i] for i in val_index]
-    test = [data[i] for i in test_index]
+    train = [smi_list[i] for i in train_index]
+    val = [smi_list[i] for i in val_index]
+    test = [smi_list[i] for i in test_index]
 
     return (train, val, test), (train_index, val_index, test_index)
 
